@@ -1,8 +1,85 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, Star, CheckCircle2, HelpCircle, MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+
+const services = [
+  {
+    id: 'devops-services',
+    name: "DevOps Services",
+    description: "Boost your system's reliability and scalability with expert DevOps solutions.",
+    price: "2,500",
+    features: [
+      "Infrastructure as Code (IaC)",
+      "CI/CD Pipeline Setup",
+      "Cloud Migration Services",
+      "24/7 Monitoring Setup"
+    ]
+  },
+  {
+    id: 'career-guidance',
+    name: "1:1 Career Guidance",
+    description: "Receive personalized career advice tailored to your goals and aspirations.",
+    price: "1,000",
+    features: [
+      "Career Path Planning",
+      "Interview Preparation",
+      "Skill Gap Analysis",
+      "Industry Insights"
+    ]
+  },
+  {
+    id: 'linkedin-banner',
+    name: "LinkedIn Banner Creation",
+    description: "Design an eye-catching LinkedIn banner to enhance your personal brand.",
+    price: "800",
+    features: [
+      "Custom Design",
+      "Professional Layout",
+      "Brand Integration",
+      "Multiple Revisions"
+    ]
+  },
+  {
+    id: 'linkedin-optimization',
+    name: "LinkedIn Profile Optimization",
+    description: "Optimize your LinkedIn profile for maximum visibility and impact.",
+    price: "1,500",
+    features: [
+      "Keyword Optimization",
+      "Content Enhancement",
+      "Profile Structure",
+      "Network Growth Strategy"
+    ]
+  },
+  {
+    id: 'resume-optimization',
+    name: "Resume Optimization",
+    description: "Transform your resume to stand out in competitive job markets.",
+    price: "1,000",
+    features: [
+      "ATS-Friendly Format",
+      "Content Optimization",
+      "Visual Enhancement",
+      "Industry-Specific Focus"
+    ]
+  },
+  {
+    id: 'community-access',
+    name: "Community Access",
+    description: "Join our exclusive community of tech professionals and access premium resources.",
+    price: "Free",
+    features: [
+      "Expert Network Access",
+      "Resource Library",
+      "Weekly Webinars",
+      "Peer Learning"
+    ]
+  }
+];
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen w-full bg-black text-white pt-20">
       {/* Header Section */}
@@ -54,7 +131,10 @@ const Services = () => {
                       ₹{service.price}
                     </div>
                   </div>
-                  <button className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold hover:shadow-lg hover:shadow-pink-500/25 transition-all">
+                  <button
+                    onClick={() => navigate(`/services/${service.id}`)}
+                    className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold hover:shadow-lg hover:shadow-pink-500/25 transition-all"
+                  >
                     Get Started
                   </button>
                 </div>
@@ -112,75 +192,6 @@ const Services = () => {
     </div>
   );
 };
-
-const services = [
-  {
-    name: "DevOps Services",
-    description: "Boost your system's reliability and scalability with expert DevOps solutions.",
-    price: "500",
-    features: [
-      "Infrastructure as Code (IaC)",
-      "CI/CD Pipeline Setup",
-      "Cloud Migration Services",
-      "24/7 Monitoring Setup"
-    ]
-  },
-  {
-    name: "1:1 Career Guidance",
-    description: "Receive personalized career advice tailored to your goals and aspirations.",
-    price: "350",
-    features: [
-      "Career Path Planning",
-      "Interview Preparation",
-      "Skill Gap Analysis",
-      "Industry Insights"
-    ]
-  },
-  {
-    name: "LinkedIn Banner Creation",
-    description: "Design an eye-catching LinkedIn banner to enhance your personal brand.",
-    price: "100",
-    features: [
-      "Custom Design",
-      "Professional Layout",
-      "Brand Integration",
-      "Multiple Revisions"
-    ]
-  },
-  {
-    name: "LinkedIn Profile Optimization",
-    description: "Optimize your LinkedIn profile for maximum visibility and impact.",
-    price: "350",
-    features: [
-      "Keyword Optimization",
-      "Content Enhancement",
-      "Profile Structure",
-      "Network Growth Strategy"
-    ]
-  },
-  {
-    name: "Resume Optimization",
-    description: "Transform your resume to stand out in competitive job markets.",
-    price: "200",
-    features: [
-      "ATS-Friendly Format",
-      "Content Optimization",
-      "Visual Enhancement",
-      "Industry-Specific Focus"
-    ]
-  },
-  {
-    name: "Community Access",
-    description: "Join our exclusive community of tech professionals and access premium resources.",
-    price: "Free",
-    features: [
-      "Expert Network Access",
-      "Resource Library",
-      "Weekly Webinars",
-      "Peer Learning"
-    ]
-  }
-];
 
 const faqs = [
   {
