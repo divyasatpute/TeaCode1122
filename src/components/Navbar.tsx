@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <Code2 className="w-8 h-8 text-pink-500" />
+            <img src="/public/teacode-fevi.png" alt="teacode logo" className="w-8 h-8" />
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
               Teacode
             </span>
