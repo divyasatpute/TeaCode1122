@@ -14,6 +14,11 @@ A cutting-edge platform designed to provide DevOps services, personalized career
 
 ---
 
+<a name="demo"></a>
+## 👩‍💻 Live demo 
+
+We're finalizing deployment and will share the link soon! 😊
+
 ## 🚀 **About TeaCode**  
 At TeaCode, we blend **technology**, **innovation**, and **creativity** to offer:  
 - 🌐 **DevOps Solutions**: Streamline workflows and optimize system performance.  
