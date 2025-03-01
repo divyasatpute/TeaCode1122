@@ -95,7 +95,7 @@ We’re committed to simplifying complex tech and enhancing personal branding, o
 </div>
 <br>
 
-I welcome contributions to Teacode1122! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/divyasatpute/TeaCode1122/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
+I welcome contributions to TeaCode1122! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/divyasatpute/TeaCode1122/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
 
 <h2>Code Of Conduct📑</h2>
 
