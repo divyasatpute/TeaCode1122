@@ -17,7 +17,7 @@ A cutting-edge platform designed to provide DevOps services, personalized career
 <a name="demo"></a>
 ## 👩‍💻 Live demo 
 
-We're finalizing deployment and will share the link soon! 😊
+We're finalizing deployment https://websiteloading..:) , will share the link soon! 😊
 
 <div>
   <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/4a07b161-b8d6-4803-804a-3b0db699023e" width="35" height="35"> Goal of our project </h2>
