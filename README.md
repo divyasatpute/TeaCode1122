@@ -90,7 +90,37 @@ We’re committed to simplifying complex tech and enhancing personal branding, o
   </tr>
 </table>
 
+<div align="left">
+<h2><font size="6"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="40" height="40" /> Want to Contribute? </font></h2>
+</div>
+<br>
 
+I welcome contributions to Teacode1122! If you're interested in contributing, please follow [CONTRIBUTING guidelines](https://github.com/divyasatpute/TeaCode1122/blob/main/CONTRIBUTING.md) to ensure a smooth and collaborative process:
 
+<h2>Code Of Conduct📑</h2>
 
-## work in progress..
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/TeaCode1122/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+## License 🔖
+
+<table>
+  <tr>
+     <td>
+       <p align="center"> <img src="(https://github.com/divyasatpute/TeaCode1122/assets/100375390/10e99569-3759-4a3f-bd5a-dace2f2ab2a7" width="80%"></img>
+    </td>
+    <td> 
+      <img src="https://img.shields.io/badge/apache-license2.0-yellow.svg"/> <br> 
+TeaCode1122 is licensed under the terms of the Apache License 2.0. check out <a href="./LICENSE">Apache 2.0</a> for details. <img width=2300/>
+    </td>
+  </tr>
+</table>
+
+<a name="support"></a>
+
+<hr>
+
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="30"> Support </h2>
+</div>
+
+- ⭐ Star our [Repo](https://github.com/divyasatpute/TeaCode1122)
