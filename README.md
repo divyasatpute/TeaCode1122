@@ -81,7 +81,7 @@ We’re committed to simplifying complex tech and enhancing personal branding, o
 
 <table border="1">
   <tr>
-      <td><img src="public\socials/whatsApp.png" alt="whatsapp Logo" width="50"></td>
+      <td><img src="public\socials/WhatsApp.png" alt="whatsapp Logo" width="50"></td>
       <td><a href="https://www.whatsapp.com/update-later"> Join our WhatsApp Community </a></td>
   </tr>
   <tr>
