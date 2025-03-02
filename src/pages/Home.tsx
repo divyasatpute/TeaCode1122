@@ -160,54 +160,40 @@ function Home() {
 
       {/* Footer */}
       <footer className="py-8 bg-dark text-gray-400">
-  <div className="container mx-auto px-6 text-center">
-    {/* Developed By Section */}
-    <p className="text-sm text-gray-300 font-medium mb-4">
-      Developed with ❤️ by{' '}
-      <a
-        href="https://www.linkedin.com/in/divya-satpute/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white font-semibold underline hover:no-underline"
-      >
-        Divya Satpute
-      </a>
-    </p>
-    
-    {/* Copyright Notice */}
-    <p className="text-sm mb-4">
-      © 2025{' '}
-      <a
-        href="https://www.helpopshub.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white underline hover:no-underline"
-      >
-        HelpOpsHub
-      </a>. All rights reserved.
-    </p>
-    
-    {/* Social Icons */}
-    <div className="flex justify-center space-x-6">
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-1.8c-3.3.7-4-1.5-4-1.5a3.2 3.2 0 00-1.3-1.7c-1-.6.1-.6.1-.6a2.5 2.5 0 011.8 1.2 2.6 2.6 0 003.6 1 2.6 2.6 0 01.8-1.6c-2.6-.3-5.3-1.3-5.3-5.7a4.5 4.5 0 011.2-3.1 4.1 4.1 0 01.1-3.1s1-.3 3.3 1.2a11.3 11.3 0 016 0c2.2-1.5 3.3-1.2 3.3-1.2a4.1 4.1 0 01.1 3.1 4.5 4.5 0 011.2 3.1c0 4.4-2.7 5.3-5.3 5.7a3 3 0 01.9 2.4v3.5c0 .3.2.6.8.5A12 12 0 0012 0z" />
-        </svg>
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zm-9 19H7V9h3v10zm-1.5-11.2a1.8 1.8 0 110-3.6 1.8 1.8 0 010 3.6zM20 19h-3v-5.4c0-1.3-1.2-1.6-1.6-1.6-.9 0-1.4.6-1.6 1.2V19h-3V9h3v1.4c.5-.7 1.2-1.4 2.6-1.4 2 0 3.6 1.2 3.6 4v5z" />
-        </svg>
-      </a>
-      <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.1 4.2A19.3 19.3 0 0016.7 3c-.3.6-.7 1.3-1 1.8a17.9 17.9 0 00-7.3 0A18.4 18.4 0 007.3 3 19.3 19.3 0 003.9 4.2a19.7 19.7 0 00-3.1 14.5 20 20 0 006.2 3.1 13.7 13.7 0 001.2-2.2 11.2 11.2 0 01-1.8-.9c.1-.1.2-.2.3-.3 3.5 1.5 7.2 1.5 10.7 0l.3.3c-.6.4-1.2.7-1.8.9a13.7 13.7 0 001.2 2.2 20 20 0 006.2-3.1 19.7 19.7 0 00-3-14.5zM8.1 14.8c-1 0-1.7-.9-1.7-1.8s.8-1.7 1.8-1.7 1.7.8 1.7 1.8-.7 1.7-1.8 1.7zm7.8 0c-1 0-1.7-.9-1.7-1.8s.8-1.7 1.8-1.7 1.7.8 1.7 1.8-.8 1.7-1.8 1.7z" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</footer>
-
+        <div className="container mx-auto px-6 text-center">
+          {/* Copyright Notice */}
+          <p className="text-sm mb-4">
+            © 2025{' '}
+            <a
+              href="https://www.helpopshub.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline hover:no-underline"
+            >
+              HelpOpsHub
+            </a>. All rights reserved.
+          </p>
+          
+          {/* Social Icons */}
+          <div className="flex justify-center space-x-6">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0a12 12 0 00-3.8 23.4c.6.1.8-.2.8-.5v-1.8c-3.3.7-4-1.5-4-1.5a3.2 3.2 0 00-1.3-1.7c-1-.6.1-.6.1-.6a2.5 2.5 0 011.8 1.2 2.6 2.6 0 003.6 1 2.6 2.6 0 01.8-1.6c-2.6-.3-5.3-1.3-5.3-5.7a4.5 4.5 0 011.2-3.1 4.1 4.1 0 01.1-3.1s1-.3 3.3 1.2a11.3 11.3 0 016 0c2.2-1.5 3.3-1.2 3.3-1.2a4.1 4.1 0 01.1 3.1 4.5 4.5 0 011.2 3.1c0 4.4-2.7 5.3-5.3 5.7a3 3 0 01.9 2.4v3.5c0 .3.2.6.8.5A12 12 0 0012 0z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zm-9 19H7V9h3v10zm-1.5-11.2a1.8 1.8 0 110-3.6 1.8 1.8 0 010 3.6zM20 19h-3v-5.4c0-1.3-1.2-1.6-1.6-1.6-.9 0-1.4.6-1.6 1.2V19h-3V9h3v1.4c.5-.7 1.2-1.4 2.6-1.4 2 0 3.6 1.2 3.6 4v5z" />
+              </svg>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.1 4.2A19.3 19.3 0 0016.7 3c-.3.6-.7 1.3-1 1.8a17.9 17.9 0 00-7.3 0A18.4 18.4 0 007.3 3 19.3 19.3 0 003.9 4.2a19.7 19.7 0 00-3.1 14.5 20 20 0 006.2 3.1 13.7 13.7 0 001.2-2.2 11.2 11.2 0 01-1.8-.9c.1-.1.2-.2.3-.3 3.5 1.5 7.2 1.5 10.7 0l.3.3c-.6.4-1.2.7-1.8.9a13.7 13.7 0 001.2 2.2 20 20 0 006.2-3.1 19.7 19.7 0 00-3-14.5zM8.1 14.8c-1 0-1.7-.9-1.7-1.8s.8-1.7 1.8-1.7 1.7.8 1.7 1.8-.7 1.7-1.8 1.7zm7.8 0c-1 0-1.7-.9-1.7-1.8s.8-1.7 1.8-1.7 1.7.8 1.7 1.8-.8 1.7-1.8 1.7z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
