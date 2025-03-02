@@ -29,6 +29,13 @@ To get started, look at the existing [**create a new issue**](https://github.com
 ### Set up guildines
 
 
+> [!NOTE]
+> This is [MERN Stack](https://nextjs.org/docs](https://www.geeksforgeeks.org/mern-stack/) project.
+> You must have installed Node.js on your local macahine. If you don't have it installed yet,                                                             
+  We will recommend a video for you that you can view from [here](https://www.youtube.com/watch?v=8UwTd15dK-E).
+> Make sure to restart your PC/Laptop after installation before proceeding to the next step.
+
+
 ***Actually, our website is currently built using only React and Tailwind CSS. In the future, we will incorporate the full MERN stack, including MongoDB, Node.js, and Express.js, along with payment integration. So, if possible, you can raise an issue on that if you want to work on it.***
 
 **Follow these steps to setup TeaCode1122 on your local machine 👇**
