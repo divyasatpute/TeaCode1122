@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import Services from './pages/Services';
 import ServiceDetails from './pages/ServiceDetails';
 import Blogs from './pages/Blogs';
@@ -21,6 +24,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:serviceId" element={<ServiceDetails />} />
           <Route path="/blogs" element={<Blogs />} />
@@ -35,6 +40,7 @@ function App() {
           <Route path="/auth/reset-password-otp" element={<ResetPasswordOTP />} />
           <Route path="/auth/reset-password" element={<ResetPassword />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
