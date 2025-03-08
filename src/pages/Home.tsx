@@ -199,31 +199,33 @@ const popularServices = [
   {
     title: "DevOps Services",
     description: "Comprehensive DevOps solutions to optimize your development pipeline.",
-    price: "300",
+    price: "2500",
     features: [
-      "Infrastructure as Code",
+      "Infrastructure as Code (IaC)",
       "CI/CD Pipeline Setup",
-      "24/7 Monitoring"
+      "Cloud Migration Services",
+      "24/7 Monitoring Setup"
     ]
   },
   {
     title: "Career Guidance",
     description: "Personalized career counseling sessions with industry experts.",
-    price: "500",
+    price: "1000",
     features: [
       "Career Path Planning",
       "Interview Preparation",
-      "Skill Gap Analysis"
-    ]
+      "Skill Gap Analysis",
+      "Industry Insights"    ]
   },
   {
-    title: "LinkedIn Optimization",
+    title: "LinkedIn Profile Optimization",
     description: "Enhance your professional presence with an optimized profile.",
-    price: "250",
+    price: "1500",
     features: [
-      "Profile Enhancement",
-      "Custom Banner Design",
-      "Content Strategy"
+      "Keyword Optimization",
+      "Content Enhancement",
+      "Profile Structure",
+      "Network Growth Strategy"
     ]
   }
 ];
