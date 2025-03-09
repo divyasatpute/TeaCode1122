@@ -99,7 +99,7 @@ I welcome contributions to TeaCode1122! If you're interested in contributing, pl
 
 <h2>Code Of Conduct📑</h2>
 
-This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/TeaCode1122/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by the [Code of Conduct](https://github.com/divyasatpute/TeaCode1122/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## License 🔖
 
