@@ -1,48 +1,60 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Services from './pages/Services';
-import ServiceDetails from './pages/ServiceDetails';
-import Blogs from './pages/Blogs';
-import BlogPost from './pages/BlogPost';
-import Signup from './pages/auth/Signup';
-import VerifyOTP from './pages/auth/VerifyOTP';
-import SetPassword from './pages/auth/SetPassword';
-import Login from './pages/auth/Login';
-import ForgotPassword from './pages/auth/ForgotPassword';
-import ResetPasswordOTP from './pages/auth/ResetPasswordOTP';
-import ResetPassword from './pages/auth/ResetPassword';
+import { useState } from 'react';
+import { Hero } from './components/Hero';
+import { NotifyModal } from './components/NotifyModal';
+import { ContactModal } from './components/ContactModal';
+import { CheckCircle2 } from 'lucide-react';
 
-function App() {
+export function App() {
+  const [isNotifyOpen, setIsNotifyOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  const triggerToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 4500);
+  };
+
   return (
-    <Router>
-      <div className="min-h-screen w-full overflow-x-hidden bg-black text-white">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:serviceId" element={<ServiceDetails />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blogs/:blogId" element={<BlogPost />} />
-          
-          {/* Auth Routes */}
-          <Route path="/auth/signup" element={<Signup />} />
-          <Route path="/auth/verify-otp" element={<VerifyOTP />} />
-          <Route path="/auth/set-password" element={<SetPassword />} />
-          <Route path="/auth/login" element={<Login />} />
-          <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-          <Route path="/auth/reset-password-otp" element={<ResetPasswordOTP />} />
-          <Route path="/auth/reset-password" element={<ResetPassword />} />
-        </Routes>
-        <Footer />
+    <>
+      {/* Background Lighting & Atmospheric Ambiance matching screenshot */}
+      <div className="ambient-scene" aria-hidden="true">
+        <div className="ambient-orb ambient-orb-1" />
+        <div className="ambient-orb ambient-orb-2" />
+        <div className="ambient-orb ambient-orb-3" />
+        <div className="ambient-grid" />
       </div>
-    </Router>
+
+      {/* Pure Single Hero Section - Centered & Non-scrollable */}
+      <Hero 
+        onNotifyClick={() => setIsNotifyOpen(true)} 
+        onContactClick={() => setIsContactOpen(true)} 
+      />
+
+      {/* Interactive Modals */}
+      <NotifyModal 
+        isOpen={isNotifyOpen} 
+        onClose={() => setIsNotifyOpen(false)} 
+        onSuccessToast={triggerToast} 
+      />
+
+      <ContactModal 
+        isOpen={isContactOpen} 
+        onClose={() => setIsContactOpen(false)} 
+        onSuccessToast={triggerToast} 
+      />
+
+      {/* Feedback Toast */}
+      {toastMessage && (
+        <aside className="toast-notice" role="status" aria-live="polite">
+          <CheckCircle2 size={20} color="#4ade80" />
+          <span style={{ fontSize: '0.95rem', fontWeight: 500, color: '#ffffff' }}>
+            {toastMessage}
+          </span>
+        </aside>
+      )}
+    </>
   );
 }
 
